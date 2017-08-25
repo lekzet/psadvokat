@@ -1,0 +1,79 @@
+.index-rewards {
+    padding: 60px 0;
+}
+
+
+.rewards-slider {
+    margin-top: 70px;
+    padding: 0 50px;
+//outline: 1px solid green;
+
+    .slick-slide {
+        width: 215px;
+        //margin: 0 -65px;
+        margin: 0 auto;
+        outline: none;
+        cursor: pointer;
+        transform: scale(.8);
+        opacity: .8;
+        transition: .5s ease-in-out;
+        
+        &:hover {
+            transform: scale(.9);
+            opacity: 1;
+        }
+        
+        img {
+            margin: 0 auto;
+            max-height: 285px;
+        }
+    }
+
+    .slick-center {
+        transform: scale(1);
+        opacity: 1;
+        
+        &:hover {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        display: block;
+        position: absolute;
+        top: 50%;
+        //margin-top: -60px;
+        width: 10px;
+        height: 35px;
+        opacity: .8;
+        z-index: 100;
+        transition: .3s;
+        
+        &:hover {
+            opacity: 1;
+        }
+        
+        &.slick-disabled {
+            opacity: .3;
+            pointer-events: none;
+        }
+    }
+
+    .slick-prev {
+        left: 0px;
+        background: url('../img/icon-prev-red.png') center no-repeat;
+    }
+
+    .slick-next {
+        right: 0px;
+        background: url('../img/icon-next-red.png') center no-repeat;
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+        content: '';
+    }
+
+}

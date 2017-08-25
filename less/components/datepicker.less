@@ -1,0 +1,250 @@
+.datepicker {
+
+}
+
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: #8295a0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    transition: .2s;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: none;
+    color: #8295a0;
+    background: #e4e8ea;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+    border: none;
+    color: #8295a0;
+    background: #e4e8ea;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    border: none;
+    color: #fff;
+    background: #414e92;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: none;
+    color: #fff;
+    background: #dc3632;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+    color: #fff;
+}
+
+//////////////////////////////////
+
+.ui-datepicker {
+    margin: 0 auto;
+    width: 360px;
+    height: 425px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    background: transparent url('../img/bg-calendar.png') no-repeat center top;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    padding: 0px;
+    padding-top: 77px;
+    padding-bottom: 35px;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    position: absolute;
+    top: 85px;
+    width: 13px;
+    height: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 12px;
+    background: url('../img/icon-calendar-prev.png');
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 12px;
+    background: url('../img/icon-calendar-next.png');
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+    top: 85px;
+    opacity: .8;
+    border: none;
+}
+
+.ui-datepicker th {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #b4c1cb;
+    padding: 10px 0;
+    padding-bottom: 15px;
+}
+
+.ui-datepicker td {
+    padding: 3px 10px;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    padding: 3px 0;
+    border-radius: 5px;
+}
+
+
+.ui-datepicker .ui-datepicker-title select {
+    font-size: 18px;
+    font-weight: 600;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+    
+    &:hover {
+        opacity: .8;
+    }
+}
+.ui-datepicker select.ui-datepicker-month {
+    width: 35%;
+}
+
+.ui-datepicker select.ui-datepicker-year {
+    width: 20%;
+}
+
+.ui-datepicker .ui-datepicker-title select option {
+    color: #000;
+}
+
+.ui-datepicker .ui-datepicker-title select:focus {
+    outline: none;
+}
+
+
+.ui-widget-content {
+    border: none;
+    background-color: transparent;
+}
+
+.ui-widget-header {
+    border: none;
+    background-color: transparent;
+}
+
+
+//==============================
+//==============================
+//==============================
+
+@media (max-width: 400px) {
+
+    .ui-datepicker {
+        width: 280px;
+        height: 336px;
+        padding: 0 10px;
+        background: transparent url('../img/bg-calendar.png') no-repeat center top;
+        background-size: 300px 336px;
+    }
+
+    .ui-datepicker .ui-datepicker-header {
+        padding-top: 57px;
+        padding-bottom: 20px;
+    }
+    
+    .ui-datepicker .ui-datepicker-prev,
+    .ui-datepicker .ui-datepicker-next {
+        top: 63px;
+    }
+    
+    .ui-datepicker .ui-datepicker-prev {
+        left: 5px;
+    }
+    
+    .ui-datepicker .ui-datepicker-next {
+        right: 5px;
+    }
+    
+    .ui-datepicker .ui-datepicker-prev-hover,
+    .ui-datepicker .ui-datepicker-next-hover {
+        top: 63px;
+    }
+    
+    .ui-datepicker th {
+        padding-bottom: 10px;
+    }
+    
+    .ui-datepicker td {
+        padding: 1px 5px;
+    }
+    
+    .ui-datepicker td span,
+    .ui-datepicker td a {
+        padding: 1px 0;
+        border-radius: 5px;
+    }
+    
+    .ui-datepicker select.ui-datepicker-month {
+        width: 50%;
+    }
+
+    .ui-datepicker select.ui-datepicker-year {
+        width: 30%;
+    }
+    
+}

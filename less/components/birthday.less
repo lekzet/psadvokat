@@ -1,0 +1,123 @@
+.birthday {
+    padding: 40px 0;
+}
+
+.birthday__wrapper {
+    padding: 30px 0;
+//outline: 1px solid brown;
+}
+
+.birthday__left-col {
+    float: left;
+    width: 64%;
+//outline: 1px solid red;
+}
+
+.birthday__right-col {
+    float: right;
+    width: 34%;
+//outline: 1px solid green;
+}
+
+.birthday-item {
+    font-size: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 6px rgba(0,0,0,.3);
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #f8f8f8 25%, white 25%);
+}
+
+.birthday-item__date {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0;
+    width: 25%;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #303d80;
+    
+    span {
+        display: block;
+        font-size: 44px;
+    }
+}
+
+.birthday-item__list {
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px 2.5%;
+    width: 70%;
+    font-size: 14px;
+}
+
+.birthday-item__list-item {
+    margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.birthday-item__title {
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    color: #303d80;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -12px;
+        width: 16px;
+        height: 28px;
+        background: url('../img/icon-birthday.png') center no-repeat;
+    }
+    
+    &--anniv {
+        padding-left: 33px;
+        color: #dc3632;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -7px;
+            width: 20px;
+            height: 21px;
+            background: url('../img/icon-birthday-anniv.png') center no-repeat;
+        }
+    }
+}
+
+.birthday-item__name {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #212633;
+}
+
+.birthday__image {
+    text-align: center;
+}
+
+//==============================
+//==============================
+//==============================
+
+@media (max-width: 1100px) {
+    .birthday__left-col,
+    .birthday__right-col {
+        float: none;
+        width: 100%;
+    }
+    
+    .birthday__image {
+        display: none;
+    }
+}

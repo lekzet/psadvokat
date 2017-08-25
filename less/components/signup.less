@@ -1,0 +1,512 @@
+.signup {
+    
+}
+
+.signup-header {
+    padding: 45px 0;
+    margin-bottom: 45px;
+    background: url('../img/bg-index-signup.jpg') center no-repeat;
+    background-size: cover;
+    
+    &__title {
+        margin: 0;
+        margin-bottom: 45px;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    &__text {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+    }
+}
+
+.signup__wrapper {
+    
+}
+
+.signup__left-col {
+    float: left;
+    width: 65%;
+}
+
+.signup__right-col {
+    float: right;
+    width: 30%;
+    margin-bottom: 60px;
+}
+
+.signup__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #212633;
+}
+
+.signup__text {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999;
+}
+
+.signup-online {
+    padding: 5%;
+    margin-bottom: 45px;
+    background-color: #ecf1f4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    
+    .red-title {
+        margin-bottom: 60px;
+        font-size: 22px;
+        text-transform: none;
+        color: #212633;
+    }
+}
+
+.signup-form {
+    width: 100%;
+    font-size: 0;
+    
+    input,
+    textarea,
+    span {
+        display: block;
+    }
+    
+    input,
+    textarea {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        padding: 9px 10px;
+        margin-top: 5px;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 400;
+        color: #212633;
+        border: 1px solid #ecf1f4;
+        outline: none;
+        border-radius: 3px;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+        transition: .3s;
+        
+        &:focus {
+            border: 1px solid #bbb;
+        }
+    }
+    
+    input.error,
+    textarea.error {
+        border: 1px solid #ff4b4b;
+    }
+
+    textarea {
+        height: 110px;
+        resize: none;
+        line-height: 1.2;
+    }
+    
+    textarea[name=birthplace] {
+        height: 128px;
+    }
+    
+    label,
+    span {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #999;
+    }
+    
+    label {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-bottom: 25px;
+    }
+    
+    label.name1,
+    label.name2,
+    label.name3 {
+        width: 30%;
+        margin-right: 5%;
+    }
+    
+    label.name3 {
+        margin-right: 0;
+    }
+    
+    label.sex {
+        width: 9%;
+        margin-right: 3%;
+    }
+    
+    label.sex > input {
+        display: none;
+    }
+    
+    label.sex .check {
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+        padding: 11px 0;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: none;
+        text-align: center;
+        color: #212633;
+        background-image: linear-gradient(to bottom, #fff, #c9c9c9);
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    label.sex > input:checked + .check {
+        color: #fefefe;
+        background-image: linear-gradient(to bottom, #757575, #585858);
+        box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+    }
+    
+    label.birthdate {
+        width: 34%;
+        margin-right: 5%;
+        margin-left: 2%;
+    }
+    
+    label.citizenship {
+        width: 35%;
+    }
+    
+    label.birthplace {
+        width: 60%;
+        margin-right: 5%;
+    }
+    
+    .phone-email {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 35%;
+    }
+    
+    label.phone,
+    label.email {
+        width: 100%;
+    }
+    
+    label.education,
+    label.institution {
+        width: 100%;
+    }
+    
+    label.experience {
+        width: 30%;
+        margin-right: 5%;
+    }
+    
+    label.speciality {
+        width: 65%;
+    }
+    
+    label.work {
+        width: 100%;
+    }
+    
+    label.registration {
+        width: 47.5%;
+        margin-right: 5%;
+    }
+    
+    label.residence {
+        width: 47.5%;
+    }
+    
+    span.pass {
+        margin-bottom: 15px;
+    }
+    
+    label.pass-ser,
+    label.pass-num,
+    label.pass-code,
+    label.pass-date,
+    label.pass-issue {
+        text-transform: none;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    label.pass-ser {
+        width: 10%;
+        margin-right: 5%;
+    }
+    
+    label.pass-num {
+        width: 15%;
+        margin-right: 5%;
+    }
+    
+    label.pass-code {
+        width: 30%;
+        margin-right: 5%;
+    }
+    
+    label.pass-date {
+        width: 30%;
+    }
+    
+    label.pass-issue {
+        width: 100%;
+    }
+    
+    label.registry {
+        width: 100%;
+    }
+    
+    label.agree {
+        position: relative;
+        padding-left: 25px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        text-transform: none;
+        color: #212633;
+        cursor: pointer;
+        
+        a {
+            color: #414e92;
+            &:hover {
+                color: #5263bd;
+                text-decoration: none;
+            }
+        }
+        
+        input {
+            position: absolute;
+            width: auto;
+            padding: 0;
+            margin: 0;
+            left: 0;
+            top: 4px;
+            box-shadow: none;
+            cursor: pointer;
+        }
+    }
+    
+    button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 15px 45px;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+        background-color: #ee3625;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        box-shadow: 0 3px 5px rgba(0,0,0,.5);
+        transition: .3s;
+        
+        &:hover {
+            background-color: #e21401;
+            box-shadow: 0 2px 3px rgba(0,0,0,.5);
+        }
+    }
+}
+
+.signup-offline {
+
+}
+
+.signup-offline__header {
+    padding: 30px;
+    background-color: #f1f1f1;
+}
+
+.signup-offline__footer {
+    font-size: 0;
+    position: relative;
+    padding: 30px;
+    perspective: 100px;
+    perspective-origin: 30% 0%;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: #f9f9f9;
+        box-shadow: 4px 10px 15px -5px rgba(0,0,0,.3);
+        transform-style: preserve-3d;
+        transform-origin: 0% 0%;
+        transform: rotateX(1deg);
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        right: 39px;
+        top: 0px;
+        z-index: -2;
+        width: 20px;
+        height: 100%;
+        box-shadow: 25px 23px 25px -5px rgba(0,0,0,.2);
+        transform-origin: top right;
+        transform: rotate(-10deg) skewY(10deg);
+    }
+}
+
+.signup-offline__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #212633;
+}
+
+.signup-offline__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999;
+}
+
+.signup-offline__link {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 34px;
+    color: #414e92;
+    background: url('../img/icon-doc-doc.png') no-repeat top left;
+    background-size: 34px 34px;
+    
+    &:hover {
+        color: #5263bd;
+        text-decoration: none;
+    }
+}
+
+.signup-offline__photo {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 16px;
+    line-height: 37px;
+    color: #212633;
+    background: url('../img/icon-photo3x4.png') no-repeat top left;
+}
+
+//==============================
+//==============================
+//==============================
+
+@media (max-width: 1200px) {
+    
+    .signup__left-col,
+    .signup__right-col {
+        float: none;
+        width: 100%;
+    }
+    
+    .signup-offline__link,
+    .signup-offline__photo {
+        width: auto;
+    }
+    
+    .signup-offline__link {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .signup-header {
+        padding: 25px 0;
+        &__title {
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+        
+        &__text {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .signup-form {
+        
+        label.name1,
+        label.name2,
+        label.name3,
+        label.citizenship,
+        label.birthplace,
+        .phone-email,
+        label.phone,
+        label.email,
+        label.education,
+        label.institution,
+        label.experience,
+        label.speciality,
+        label.work,
+        label.registration,
+        label.residence,
+        label.pass-issue,
+        label.registry {
+            display: block;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 25px;
+        }
+        
+        label.sex {
+            width: 20%;
+            margin-right: 5%;
+        }
+        
+        label.birthdate {
+            width: 50%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        label.pass-ser,
+        label.pass-code {
+            width: 47.5%;
+            margin-right: 5%;
+        }
+        
+        label.pass-num,
+        label.pass-date {
+            width: 47.5%;
+            margin-right: 0;
+        }
+
+        textarea[name=birthplace] {
+            height: 110px;
+        }
+    }
+    
+}

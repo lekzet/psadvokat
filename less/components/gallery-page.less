@@ -1,0 +1,150 @@
+.gallery-page {
+    padding: 40px 0;
+}
+
+.gallery-page__wrapper {
+    position: relative;
+    padding-top: 30px;
+}
+
+.gallery-page__left-col {
+    float: left;
+    width: 65%;
+
+}
+
+.gallery-page__right-col {
+    float: right;
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.gallery-page__date {
+    font-size: 16px;
+    font-weight: 600;
+    color: #dc3632;
+
+    &::after {
+        content: ' | ';
+        color: #8c8c8c;
+    }
+}
+
+.gallery-page__cat {
+    font-size: 16px;
+    font-weight: 600;
+    color: #8c8c8c;
+    text-decoration: none;
+    transition: .2s;
+    
+    &:hover {
+        color: #666;
+    }
+}
+
+.gallery-page__title {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #212633;
+}
+
+.gallery-page__counter {
+    display: block;
+    margin-top: 45px;
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #414e92;
+    background: url('../img/icon-photo.png') no-repeat left center;
+    
+    &--video {
+        background: url('../img/icon-video.png') no-repeat left center;
+    }
+}
+
+.gallery-page__list,
+.gallery-page__list-video {
+    font-size: 0;
+    margin: 25px 0;
+}
+
+.gallery-page__list a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 170px;
+    height: 145px;
+    overflow: hidden;
+    
+    &:hover {
+        opacity: .95;
+    }
+}
+
+.gallery-page__list img {
+    max-width: none;
+    height: 100%;
+}
+
+.gallery-page__list-video a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 230px;
+    overflow: hidden;
+    
+    &:hover {
+        opacity: .95;
+    }
+}
+
+.gallery-page__list-video img {
+    max-width: none;
+    height: 100%;
+}
+
+
+
+//==============================
+//==============================
+//==============================
+
+@media (max-width: 700px) {
+    
+    .gallery-page__left-col,
+    .gallery-page__right-col {
+        float: none;
+        width: auto;
+    }
+    
+    .gallery-page__right-col {
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+    
+    .gallery-page__list {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    .gallery-page__list-video {
+        text-align: center;
+    }
+
+    .gallery-page__list-video a {
+        margin-right: 0;
+    }
+}

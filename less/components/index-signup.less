@@ -1,0 +1,141 @@
+.index-signup {
+    margin-top: 20px;
+    min-height: 300px;
+    padding: 65px 0;
+    background: url('../img/bg-index-signup.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.index-signup__left-col {
+    position: relative;
+    float: left;
+    width: 37.5%;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: -86px;
+        left: 20px;
+        width: 35px;
+        height: 81px;
+        background: url('../img/icon-clip.png') center no-repeat;
+    }
+}
+
+.index-signup__right-col {
+    float: right;
+    width: 62.5%;
+}
+
+.index-signup__title {
+    position: relative;
+    margin: 0;
+    margin-left: 75px;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #fff;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        left: 3px;
+        bottom: -30px;
+        width: 100px;
+        height: 5px;
+        background-color: #dc3632;
+    }
+}
+
+.index-signup__text {
+    margin: 0;
+    margin-right: 160px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.index-signup__btn {
+    display: block;
+    margin-top: 45px;
+    width: 210px;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ee3625;
+    border-radius: 5px;
+    transition: .3s;
+    box-shadow: 0 3px 5px rgba(0,0,0,.5);
+    
+    &:hover {
+        background-color: #e21401;
+        box-shadow: 0 2px 3px rgba(0,0,0,.5);
+    }
+    
+    &:active {
+        opacity: .8;
+    }
+}
+
+//==============================
+//==============================
+//==============================
+
+@media (max-width: 1200px) {
+    .index-signup {
+        padding-top: 80px;
+        min-height: 285px;
+    }
+    
+    .index-signup__left-col::after {
+        top: -101px;
+        left: 0;
+    }
+    
+    .index-signup__title {
+        margin-left: 0;
+        font-size: 40px;
+    }
+    
+    .index-signup__text {
+        margin-right: 0px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .index-signup {
+        min-height: 240px;
+    }
+    
+    .index-signup__left-col,
+    .index-signup__right-col {
+        float: none;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .index-signup__title {
+        font-size: 42px;
+        
+        &::after {
+            left: 100px;
+        }
+    }
+    
+    .index-signup__text {
+        display: none;
+    }
+    
+    .index-signup__btn {
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+}

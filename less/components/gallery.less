@@ -1,0 +1,135 @@
+.gallery {
+    padding: 40px 0;
+}
+
+.gallery__wrapper {
+    padding: 30px 0;
+}
+
+.gallery__items {
+    margin: 0 -1.5%;
+    font-size: 0;
+}
+
+.gallery-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 30.33%;
+    margin: 15px 1.5%;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    border-radius: 5px;
+    overflow: hidden;
+    
+    &:hover {
+        box-shadow: 0 0 15px rgba(0,0,0,.3);
+    }
+}
+
+.gallery-item__image {
+    display: block;
+    background-color: #aaa;
+    overflow: hidden;
+}
+
+.gallery-item__image img {
+    width: 100%;
+    &:hover {
+        opacity: .95;
+    }
+}
+
+.gallery-item__text {
+    padding: 30px 5%;
+    padding-bottom: 25px;
+}
+
+.gallery-item__date {
+    font-size: 14px;
+    font-weight: 600;
+    color: #dc3632;
+
+    &::after {
+        content: ' | ';
+        color: #8c8c8c;
+    }
+}
+
+.gallery-item__cat {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8c8c8c;
+    text-decoration: none;
+    transition: .2s;
+    
+    &:hover {
+        color: #666;
+    }
+}
+
+.gallery-item__title {
+    display: block;
+    margin-top: 7px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1d1d1d;
+    transition: .2s;
+    
+    &:hover {
+        color: #414e92;
+    }
+}
+
+.gallery-item__preview {
+    margin: 0;
+    margin-top: 7px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+}
+
+.gallery-item__counter {
+    display: block;
+    margin-top: 20px;
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #414e92;
+    background: url('../img/icon-photo.png') no-repeat left center;
+    opacity: .5;
+    
+    &--video {
+        background: url('../img/icon-video.png') no-repeat left center;
+    }
+}
+
+
+
+//==============================
+//==============================
+//==============================
+
+@media (max-width: 1200px) {
+    
+    .gallery-item {
+        width: 47%;
+        margin: 10px 1.5%;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    
+    .gallery__items {
+        margin: 0;
+    }
+    
+    .gallery-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+}
